@@ -125,9 +125,10 @@ body {
 .about__images {
     margin-right: 60px;
     margin-left: 80px;
+    max-width: 387px;
     position: relative;
     .about__img {
-        display: block;
+        display: inline-block;
         object-fit: cover;
         box-shadow: 0px 12px 17px 0px rgba(0, 0, 0, 0.16);
     }
@@ -532,6 +533,10 @@ body {
         transition: all 0.5s;
         a {
             margin-top: 20px;
+            background-image: url('../images/plus.png');
+            background-repeat: no-repeat;
+            width: 50px;
+            height: 50px;
         }
     }
 }
@@ -691,7 +696,7 @@ body {
 
 .blog__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .blog__item {
@@ -935,3 +940,6 @@ div.scrollup {
   div.scrollup:hover {
     background-color: #27debf;
   }
+
+
+  @import "media";

@@ -22,4 +22,13 @@ $(function () {
     });
 
 
+    $('.header__menu-btn').on('click', function () {
+        $(this).toggleClass('header__menu-btn-active');
+    });
+
+    $('.header__menu-btn').on('click', function () {
+        $('.menu__list').slideToggle();
+    });
+
+
 });
